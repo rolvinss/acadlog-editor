@@ -66,6 +66,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount.js';
+import MathType from '@wiris/mathtype-ckeditor5/src/plugin';
 
 class Editor extends ClassicEditor {}
 
@@ -133,7 +134,8 @@ Editor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	Underline,
-	WordCount
+	MathType,
+	WordCount,
 ];
 
 // Editor configuration.
@@ -148,6 +150,8 @@ Editor.defaultConfig = {
 			'fontBackgroundColor',
 			'underline',
 			'highlight',
+			'MathType',
+			'ChemType',
 			'bold',
 			'italic',
 			'link',
